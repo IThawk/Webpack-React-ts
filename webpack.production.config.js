@@ -4,9 +4,9 @@ var HTMLPlugin = require("html-webpack-plugin");
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: __dirname + "/src/app.tsx",
+  entry: __dirname + "/src/index.tsx",
   output: {
-    path: __dirname + "/dist/js",
+    path: __dirname + "/dist",
     filename: "bundle.[chunkhash:8].js"
   },
   resolve: {

@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --content-base dist --port 8081 --progress  --inline",
-    "build": "del /F /S /Q dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
+    "build": "del /F /S /Q dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress",
+    "start": "set PORT=9000 &&react-scripts-ts start"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "react-scripts-ts": "3.1.0"
   },
   "devDependencies": {
     "@types/jest": "^23.3.10",
