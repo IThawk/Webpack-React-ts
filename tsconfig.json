@@ -1,7 +1,8 @@
+// 这个是配置语法检查
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "/dist",
+    "outDir": "build/dist",
     "module": "esnext",
     "target": "es5",
     "lib": ["es6", "dom"],
@@ -13,8 +14,8 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noImplicitAny": false,
-    "importHelpers": false,
+    "noImplicitAny": false,  // 这个地方用于解决constructor(props)报错any类型
+    "importHelpers": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true
