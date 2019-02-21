@@ -1,0 +1,58 @@
+
+var exec = require('child_process');
+
+
+
+  let controller = {
+    acess: function() {
+    // 成功的例子
+    //  使用说明  execFile  第一个参数就是  执行的命令    第二个参数中：数组中的第一个是 命令的不全
+    exec.execFile('node', ['server.js',"ssss","dddddddd"], function(error, stdout, stderr){
+    if(error) {
+        console.error('error: ' + error);
+        return;
+    }
+    console.log('stdout: ' +  stdout);
+    console.log('stderr: ' +  stderr);
+});
+
+    }
+  };
+
+
+//var nodeCmd = require('node-cmd');
+
+
+// var program = require('commander');
+// let controller = {
+//     acess: function() {
+//         nodeCmd.get(
+//             ' node ru.js',
+//             function(err, data, stderr){
+//                 console.log(data);
+//                 console.log(stderr);
+//                 console.log(err);
+//             }
+//         );
+     
+//        // nodeCmd.run('cd D:/dddd/dddd/output/DataWindow/DataWindow/build &&');
+//         // nodeCmd.get('cd D:/dddd/dddd/output/DataWindow/DataWindow/build && node server.js',
+//         // function(err, data, stderr){
+//         //     console.log(data);
+//         // });
+//         // nodeCmd.get(
+//         //     ' netstat -ano|findstr "8080"',
+//         //     function(err, data, stderr){
+//         //         console.log(data);
+//         //     }
+//         // );
+//     }
+//   };
+
+
+
+
+
+
+  controller.acess();
+  module.exports = controller;
